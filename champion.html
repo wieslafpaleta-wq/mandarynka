@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Champion">
+  <meta name="theme-color" content="#060e08">
+  <meta name="description" content="Twoja codzienna aplikacja do samorozwoju">
+  <!-- PWA manifest -->
+  <link rel="manifest" href="manifest.json">
+  <!-- iOS icons -->
+  <link rel="apple-touch-icon" href="icons/icon-192.png">
+  <link rel="apple-touch-icon" sizes="192x192" href="icons/icon-192.png">
+  <link rel="apple-touch-icon" sizes="512x512" href="icons/icon-512.png">
+  <!-- iOS splash screens (basic) -->
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <!-- Standard icon -->
+  <link rel="icon" type="image/png" sizes="192x192" href="icons/icon-192.png">
+  <link rel="shortcut icon" href="icons/icon-192.png">
+  <title>Champion ⚡</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Particle layers -->
+<div id="xp-floats"></div>
+<div id="burst-container"></div>
+
+<!-- Win toast - fixed positioned via CSS -->
+<div id="win-toast"></div>
+
+<div id="app">
+  <!-- Dynamic header -->
+  <div id="header-card"></div>
+
+  <!-- Tab contents -->
+  <div id="tab-today"    class="tab-content active"></div>
+  <div id="tab-week"     class="tab-content"></div>
+  <div id="tab-quests"   class="tab-content"></div>
+  <div id="tab-goals"    class="tab-content"></div>
+  <div id="tab-finance"  class="tab-content"></div>
+  <div id="tab-level"    class="tab-content"></div>
+</div>
+
+<!-- Bottom nav -->
+<nav id="bottom-nav">
+  <button class="nav-btn active" data-tab="today"   onclick="switchTab('today')">
+    <span class="nav-icon">⚡</span>
+    <span class="nav-label">Dziś</span>
+    <span class="nav-dot" id="dot-today"></span>
+  </button>
+  <button class="nav-btn" data-tab="week"    onclick="switchTab('week')">
+    <span class="nav-icon">📅</span>
+    <span class="nav-label">Tydzień</span>
+  </button>
+  <button class="nav-btn" data-tab="quests"  onclick="switchTab('quests')">
+    <span class="nav-icon">🎰</span>
+    <span class="nav-label">Questy</span>
+  </button>
+  <button class="nav-btn" data-tab="goals"   onclick="switchTab('goals')">
+    <span class="nav-icon">🎯</span>
+    <span class="nav-label">Cele</span>
+  </button>
+  <button class="nav-btn" data-tab="finance" onclick="switchTab('finance')">
+    <span class="nav-icon">💰</span>
+    <span class="nav-label">Kasa</span>
+  </button>
+  <button class="nav-btn" data-tab="level"   onclick="switchTab('level')">
+    <span class="nav-icon">📊</span>
+    <span class="nav-label">Postępy</span>
+  </button>
+</nav>
+
+<script src="ai-coach.js"></script>
+
+<script src="app.js"></script>
+</body>
+</html>

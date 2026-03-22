@@ -1,0 +1,52 @@
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  CHAMPION APP ⚡ — Instrukcja instalacji
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+OPCJA 1: Lokalnie na telefonie (NAJŁATWIEJSZE)
+────────────────────────────────────────────────
+1. Wrzuć cały folder na telefon (przez kabel USB, 
+   Google Drive, WhatsApp, AirDrop itp.)
+2. Otwórz plik index.html w przeglądarce Chrome/Safari
+3. Aplikacja działa! Zapisz do ekranu głównego:
+   
+   Android (Chrome): 
+   • Otwórz index.html w Chrome
+   • Menu ⋮ → "Dodaj do ekranu głównego"
+   • Gotowe! Ikona pojawi się jak natywna aplikacja
+   
+   iPhone (Safari):
+   • Otwórz index.html w Safari  
+   • Ikona udostępniania (kwadrat ze strzałką w górę)
+   • "Dodaj do ekranu głównego"
+   • Gotowe!
+
+OPCJA 2: Przez serwer (do instalacji PWA)
+────────────────────────────────────────────────
+Jeśli chcesz pełne PWA (instalacja bez hosta):
+1. Użyj np. GitHub Pages (darmowe):
+   - Stwórz repo na github.com
+   - Wgraj pliki
+   - Settings → Pages → Deploy from main
+   - Otwórz na telefonie i zainstaluj przez przeglądarkę
+
+LUB użyj darmowego hostingu jak Netlify (netlify.com):
+   - Przeciągnij folder na stronę
+   - Dostaniesz link .netlify.app
+   - Otwórz na telefonie i zainstaluj
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+STRUKTURA PLIKÓW:
+  index.html       — główna strona
+  styles.css       — wygląd aplikacji  
+  app.js           — logika aplikacji
+  ai-coach.js      — wiadomości motywacyjne + AI
+  manifest.json    — konfiguracja PWA
+  service-worker.js — działanie offline
+  icons/           — ikony aplikacji
+
+UWAGI:
+• Aplikacja zapisuje dane w localStorage przeglądarki
+• Nawyki resetują się każdego dnia automatycznie
+• AI Asystent wymaga internetu (reszta offline)
+• Wszystko inne działa bez sieci
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
